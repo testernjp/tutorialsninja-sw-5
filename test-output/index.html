@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-testsuite" class="navigator-link">
+              <span class="suite-name border-failed">testsuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-testsuite" class="navigator-link ">
+                    <span>C:\Users\patel\IdeaProjects\tutorialsninja-sw-5\src\test\java\resources\runners\regression.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-testsuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-testsuite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-testsuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-testsuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-testsuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-testsuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 4 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-testsuite" class="hide-methods failed suite-testsuite"> (hide)</a> <!-- hide-methods failed suite-testsuite -->
+                      <a href="#" panel-name="suite-testsuite" class="show-methods failed suite-testsuite"> (show)</a> <!-- show-methods failed suite-testsuite -->
+                    </span>
+                    <div class="method-list-content failed suite-testsuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testsuite" title="com.tutorialsninja.demo.testsuite.DesktopsTest" class="method navigator-link" hash-for-method="verifyProductAddedToShoppingCartSuccessFully">verifyProductAddedToShoppingCartSuccessFully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testsuite" title="com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest" class="method navigator-link" hash-for-method="verifyThatUserPlaceOrderSuccessfully">verifyThatUserPlaceOrderSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testsuite" title="com.tutorialsninja.demo.testsuite.MyAccountsTest" class="method navigator-link" hash-for-method="verifyThatUserRegisterAccountSuccessfully">verifyThatUserRegisterAccountSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testsuite" title="com.tutorialsninja.demo.testsuite.MyAccountsTest" class="method navigator-link" hash-for-method="verifyThatUserShouldLoginAndLogoutSuccessfully">verifyThatUserShouldLoginAndLogoutSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-testsuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-testsuite" class="hide-methods passed suite-testsuite"> (hide)</a> <!-- hide-methods passed suite-testsuite -->
+                      <a href="#" panel-name="suite-testsuite" class="show-methods passed suite-testsuite"> (show)</a> <!-- show-methods passed suite-testsuite -->
+                    </span>
+                    <div class="method-list-content passed suite-testsuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testsuite" title="com.tutorialsninja.demo.testsuite.DesktopsTest" class="method navigator-link" hash-for-method="verifyProductArrangeInAlphabeticalOrder">verifyProductArrangeInAlphabeticalOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testsuite" title="com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest" class="method navigator-link" hash-for-method="verifyProductsPriceDisplayHighToLowSuccessfully">verifyProductsPriceDisplayHighToLowSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testsuite" title="com.tutorialsninja.demo.testsuite.TopMenuTest" class="method navigator-link" hash-for-method="verifyUserShouldNavigateToComponentsPageSuccessfully">verifyUserShouldNavigateToComponentsPageSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testsuite" title="com.tutorialsninja.demo.testsuite.TopMenuTest" class="method navigator-link" hash-for-method="verifyUserShouldNavigateToDesktopsPageSuccessfully">verifyUserShouldNavigateToDesktopsPageSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testsuite" title="com.tutorialsninja.demo.testsuite.TopMenuTest" class="method navigator-link" hash-for-method="verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testsuite" title="com.tutorialsninja.demo.testsuite.MyAccountsTest" class="method navigator-link" hash-for-method="verifyUserShouldNavigateToLoginPageSuccessfully">verifyUserShouldNavigateToLoginPageSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testsuite" title="com.tutorialsninja.demo.testsuite.MyAccountsTest" class="method navigator-link" hash-for-method="verifyUserShouldNavigateToRegisterPageSuccessfully">verifyUserShouldNavigateToRegisterPageSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-testsuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-testsuite" class="panel testsuite">
+          <div class="suite-testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatUserPlaceOrderSuccessfully">
+                  </a> <!-- verifyThatUserPlaceOrderSuccessfully -->
+                  <span class="method-name">verifyThatUserPlaceOrderSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://tutorialsninja.com/demo/index.php?route=product/category&amp;amp;path=18&quot; class=&quot;see-all&quot;&gt;...&lt;/a&gt; is not clickable at point (368, 205). Other element would receive the click: &lt;img src=&quot;https://tutorialsninja.com/demo/image/cache/catalog/demo/macbook_1-200x200.jpg&quot; alt=&quot;MacBook&quot; title=&quot;MacBook&quot; class=&quot;img-responsive&quot;&gt;
+  (Session info: chrome=119.0.6045.200)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee3bcec7d80c05a8cad70f8e73995c5b, clickElement {id=F0C4BF56AACDC5F3FEBEAD8330962EC3_element_52}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61605/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ee3bcec7d80c05a8cad70f8e73995c5b)] -&gt; xpath: //a[normalize-space()=&apos;Show AllLaptops &amp; Notebooks&apos;]]
+Session ID: ee3bcec7d80c05a8cad70f8e73995c5b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.clickOnElement(Utility.java:67)
+	at com.tutorialsninja.demo.pages.HomePage.selectMenu(HomePage.java:72)
+	at com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully(LaptopsAndNotebooksTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testsuite-class-failed -->
+          <div class="suite-testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tutorialsninja.demo.testsuite.MyAccountsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatUserRegisterAccountSuccessfully">
+                  </a> <!-- verifyThatUserRegisterAccountSuccessfully -->
+                  <span class="method-name">verifyThatUserRegisterAccountSuccessfully</span>
+                  <div class="stack-trace">java.lang.AssertionError: account not created expected [Your Account Has Been Created!] but found [Register Account]
+	at com.tutorialsninja.demo.testsuite.MyAccountsTest.verifyThatUserRegisterAccountSuccessfully(MyAccountsTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatUserShouldLoginAndLogoutSuccessfully">
+                  </a> <!-- verifyThatUserShouldLoginAndLogoutSuccessfully -->
+                  <span class="method-name">verifyThatUserShouldLoginAndLogoutSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;content&apos;]/h2[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=119.0.6045.200)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8cf24e4b54870ab399c16c0cbb4f8d06, findElement {using=xpath, value=//div[@id=&apos;content&apos;]/h2[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61671}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61671/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cf24e4b54870ab399c16c0cbb4f8d06
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.getTextFromElement(Utility.java:78)
+	at com.tutorialsninja.demo.pages.MyAccountPage.getMyAccountText(MyAccountPage.java:56)
+	at com.tutorialsninja.demo.testsuite.MyAccountsTest.verifyThatUserShouldLoginAndLogoutSuccessfully(MyAccountsTest.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testsuite-class-failed -->
+          <div class="suite-testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tutorialsninja.demo.testsuite.DesktopsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductAddedToShoppingCartSuccessFully">
+                  </a> <!-- verifyProductAddedToShoppingCartSuccessFully -->
+                  <span class="method-name">verifyProductAddedToShoppingCartSuccessFully</span>
+                  <div class="stack-trace">java.lang.AssertionError: Delivery Date Doesn&apos;t Appear expected [true] but found [false]
+	at com.tutorialsninja.demo.testsuite.DesktopsTest.verifyProductAddedToShoppingCartSuccessFully(DesktopsTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testsuite-class-failed -->
+          <div class="suite-testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductsPriceDisplayHighToLowSuccessfully">
+                  </a> <!-- verifyProductsPriceDisplayHighToLowSuccessfully -->
+                  <span class="method-name">verifyProductsPriceDisplayHighToLowSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testsuite-class-passed -->
+          <div class="suite-testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tutorialsninja.demo.testsuite.MyAccountsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToLoginPageSuccessfully">
+                  </a> <!-- verifyUserShouldNavigateToLoginPageSuccessfully -->
+                  <span class="method-name">verifyUserShouldNavigateToLoginPageSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToRegisterPageSuccessfully">
+                  </a> <!-- verifyUserShouldNavigateToRegisterPageSuccessfully -->
+                  <span class="method-name">verifyUserShouldNavigateToRegisterPageSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testsuite-class-passed -->
+          <div class="suite-testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tutorialsninja.demo.testsuite.TopMenuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToComponentsPageSuccessfully">
+                  </a> <!-- verifyUserShouldNavigateToComponentsPageSuccessfully -->
+                  <span class="method-name">verifyUserShouldNavigateToComponentsPageSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToDesktopsPageSuccessfully">
+                  </a> <!-- verifyUserShouldNavigateToDesktopsPageSuccessfully -->
+                  <span class="method-name">verifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully">
+                  </a> <!-- verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully -->
+                  <span class="method-name">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testsuite-class-passed -->
+          <div class="suite-testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tutorialsninja.demo.testsuite.DesktopsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductArrangeInAlphabeticalOrder">
+                  </a> <!-- verifyProductArrangeInAlphabeticalOrder -->
+                  <span class="method-name">verifyProductArrangeInAlphabeticalOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testsuite-class-passed -->
+        </div> <!-- panel testsuite -->
+        <div panel-name="test-xml-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\patel\IdeaProjects\tutorialsninja-sw-5\src\test\java\resources\runners\regression.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;testsuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.tutorialsninja.demo.customlisteners.CustomListeners&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tutorialsninja.demo.testsuite.DesktopsTest&quot;/&gt;
+      &lt;class name=&quot;com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest&quot;/&gt;
+      &lt;class name=&quot;com.tutorialsninja.demo.testsuite.MyAccountsTest&quot;/&gt;
+      &lt;class name=&quot;com.tutorialsninja.demo.testsuite.TopMenuTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Test --&gt;
+&lt;/suite&gt; &lt;!-- testsuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyProductAddedToShoppingCartSuccessFully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyProductArrangeInAlphabeticalOrder</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyProductsPriceDisplayHighToLowSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatUserPlaceOrderSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatUserRegisterAccountSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatUserShouldLoginAndLogoutSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToComponentsPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToLoginPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToRegisterPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyProductArrangeInAlphabeticalOrder</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyProductsPriceDisplayHighToLowSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToRegisterPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyProductAddedToShoppingCartSuccessFully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatUserPlaceOrderSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToLoginPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_testsuite');
+function tableData_testsuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyThatUserShouldLoginAndLogoutSuccessfully')
+data.setCell(0, 2, 'com.tutorialsninja.demo.testsuite.MyAccountsTest')
+data.setCell(0, 3, 41809);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyThatUserRegisterAccountSuccessfully')
+data.setCell(1, 2, 'com.tutorialsninja.demo.testsuite.MyAccountsTest')
+data.setCell(1, 3, 22540);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyUserShouldNavigateToRegisterPageSuccessfully')
+data.setCell(2, 2, 'com.tutorialsninja.demo.testsuite.MyAccountsTest')
+data.setCell(2, 3, 20851);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyProductAddedToShoppingCartSuccessFully')
+data.setCell(3, 2, 'com.tutorialsninja.demo.testsuite.DesktopsTest')
+data.setCell(3, 3, 18115);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyProductArrangeInAlphabeticalOrder')
+data.setCell(4, 2, 'com.tutorialsninja.demo.testsuite.DesktopsTest')
+data.setCell(4, 3, 2319);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyProductsPriceDisplayHighToLowSuccessfully')
+data.setCell(5, 2, 'com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest')
+data.setCell(5, 3, 1804);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyThatUserPlaceOrderSuccessfully')
+data.setCell(6, 2, 'com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest')
+data.setCell(6, 3, 1404);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyUserShouldNavigateToDesktopsPageSuccessfully')
+data.setCell(7, 2, 'com.tutorialsninja.demo.testsuite.TopMenuTest')
+data.setCell(7, 3, 1300);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully')
+data.setCell(8, 2, 'com.tutorialsninja.demo.testsuite.TopMenuTest')
+data.setCell(8, 3, 1091);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyUserShouldNavigateToComponentsPageSuccessfully')
+data.setCell(9, 2, 'com.tutorialsninja.demo.testsuite.TopMenuTest')
+data.setCell(9, 3, 1047);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyUserShouldNavigateToLoginPageSuccessfully')
+data.setCell(10, 2, 'com.tutorialsninja.demo.testsuite.MyAccountsTest')
+data.setCell(10, 3, 657);
+window.suiteTableData['testsuite']= { tableData: data, tableDiv: 'times-div-testsuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-testsuite">
+              </div> <!-- times-div-testsuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Hovering and Clicking on desktop [[ChromeDriver: chrome on windows (a8fb44e52b11b811474f7cf021efb09a)] -> link text: Desktops]</span>
+                <span class="reporter-method-output">Clicking on Show all Desktops[[ChromeDriver: chrome on windows (a8fb44e52b11b811474f7cf021efb09a)] -> xpath: //a[normalize-space()='Show AllDesktops']]</span>
+                <span class="reporter-method-output">Getting desktop text [[ChromeDriver: chrome on windows (a8fb44e52b11b811474f7cf021efb09a)] -> xpath: //h2[contains(text(),'Desktops')]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToRegisterPageSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on my account [[ChromeDriver: chrome on windows (20dd0e4eb4c6adb762ed97de5c6f87a7)] -> xpath: //span[contains(text(),'My Account')]]</span>
+                <span class="reporter-method-output">Getting register account text [[ChromeDriver: chrome on windows (20dd0e4eb4c6adb762ed97de5c6f87a7)] -> xpath: //h1[contains(text(),'Register Account')]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyProductArrangeInAlphabeticalOrder</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Hovering and Clicking on desktop [[ChromeDriver: chrome on windows (3d4d8867f6b8133e9f22e2db67661fb8)] -> link text: Desktops]</span>
+                <span class="reporter-method-output">Clicking on Show all Desktops[[ChromeDriver: chrome on windows (3d4d8867f6b8133e9f22e2db67661fb8)] -> xpath: //a[normalize-space()='Show AllDesktops']]</span>
+                <span class="reporter-method-output">Clicking on sort by button [[ChromeDriver: chrome on windows (3d4d8867f6b8133e9f22e2db67661fb8)] -> id: input-sort]</span>
+                <span class="reporter-method-output">selectName (Z - A)from[[ChromeDriver: chrome on windows (3d4d8867f6b8133e9f22e2db67661fb8)] -> id: input-sort]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToComponentsPageSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Hovering and Clicking on components [[ChromeDriver: chrome on windows (16d8cb8b343d51dd1a5be2e122df4d78)] -> link text: Components]</span>
+                <span class="reporter-method-output">Clicking on Show all Desktops[[ChromeDriver: chrome on windows (16d8cb8b343d51dd1a5be2e122df4d78)] -> xpath: //a[normalize-space()='Show AllComponents']]</span>
+                <span class="reporter-method-output">Getting components text [[ChromeDriver: chrome on windows (16d8cb8b343d51dd1a5be2e122df4d78)] -> xpath: //h2[contains(text(),'Components')]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Hovering and Clicking on laptops and notebooks [[ChromeDriver: chrome on windows (010ba0cd3785b7a1628a3e876b791a3a)] -> link text: Laptops & Notebooks]</span>
+                <span class="reporter-method-output">Clicking on Show all Desktops[[ChromeDriver: chrome on windows (010ba0cd3785b7a1628a3e876b791a3a)] -> xpath: //a[normalize-space()='Show AllLaptops & Notebooks']]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyProductsPriceDisplayHighToLowSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Hovering and Clicking on laptops and notebooks [[ChromeDriver: chrome on windows (fa1e2c13aa80faae1c10e1be903de85f)] -> link text: Laptops & Notebooks]</span>
+                <span class="reporter-method-output">Clicking on Show all Desktops[[ChromeDriver: chrome on windows (fa1e2c13aa80faae1c10e1be903de85f)] -> xpath: //a[normalize-space()='Show AllLaptops & Notebooks']]</span>
+                <span class="reporter-method-output">selecting Price (High > Low)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToLoginPageSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on my account [[ChromeDriver: chrome on windows (6963d31877e0500a9833b26802c04244)] -> xpath: //span[contains(text(),'My Account')]]</span>
+                <span class="reporter-method-output">Getting login account text [[ChromeDriver: chrome on windows (6963d31877e0500a9833b26802c04244)] -> xpath: //h2[contains(text(),'Returning Customer')]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyThatUserRegisterAccountSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on my account [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -> xpath: //span[contains(text(),'My Account')]]</span>
+                <span class="reporter-method-output">Enter first nameSnehato field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -> name: firstname]</span>
+                <span class="reporter-method-output">Enter last nameShahto field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -> name: lastname]</span>
+                <span class="reporter-method-output">Enter emailsneha123@gmail.comto email field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -> name: email]</span>
+                <span class="reporter-method-output">Enter telephone07564123785to field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -> name: telephone]</span>
+                <span class="reporter-method-output">Enter passwordshah123to field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -> name: password]</span>
+                <span class="reporter-method-output">Enter emailshah123to email field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -> name: confirm]</span>
+                <span class="reporter-method-output">Clicking on subscribe [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -> name: newsletter]</span>
+                <span class="reporter-method-output">Clicking on privacy policy [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -> name: agree]</span>
+                <span class="reporter-method-output">Clicking on continue [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -> xpath: //input[@type='submit']]</span>
+                <span class="reporter-method-output">Getting account creation text [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -> xpath: //div[@id='content']/h1]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyProductAddedToShoppingCartSuccessFully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Show all Desktops[[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -> xpath: //a[normalize-space()='Show AllDesktops']]</span>
+                <span class="reporter-method-output">select A to Zfrom[[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -> id: input-sort]</span>
+                <span class="reporter-method-output">Clicking on product HPLP3065 [[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -> xpath: //a[contains(text(),'HP LP3065')]]</span>
+                <span class="reporter-method-output">Getting HPLP3065 text [[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -> xpath: //h1[contains(text(),'HP LP3065')]]</span>
+                <span class="reporter-method-output">clearing current quantity and adding the specified amount</span>
+                <span class="reporter-method-output">Clicking on add to cart Button [[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -> xpath: //button[@id='button-cart']]</span>
+                <span class="reporter-method-output">Verifying if success message contains Success: You have added HP LP3065 to your shopping cart!</span>
+                <span class="reporter-method-output">Clicking on shopping cart [[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -> xpath: //div[@class='alert alert-success alert-dismissible']/a[2]]</span>
+                <span class="reporter-method-output">Verifying if success message contains Shopping Cart</span>
+                <span class="reporter-method-output">Verifying if success message contains 2022-11-30</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyThatUserShouldLoginAndLogoutSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on my account [[ChromeDriver: chrome on windows (8cf24e4b54870ab399c16c0cbb4f8d06)] -> xpath: //span[contains(text(),'My Account')]]</span>
+                <span class="reporter-method-output">Enter emailsneha123@gmail.comto  field [[ChromeDriver: chrome on windows (8cf24e4b54870ab399c16c0cbb4f8d06)] -> name: email]</span>
+                <span class="reporter-method-output">Enter passwordshah123to field [[ChromeDriver: chrome on windows (8cf24e4b54870ab399c16c0cbb4f8d06)] -> name: password]</span>
+                <span class="reporter-method-output">Clicking on Login Button [[ChromeDriver: chrome on windows (8cf24e4b54870ab399c16c0cbb4f8d06)] -> xpath: //input[@value='Login']]</span>
+                <span class="reporter-method-output">Getting my account text Proxy element for: DefaultElementLocator 'By.xpath: //div[@id='content']/h2[text()='My Account']'</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyThatUserPlaceOrderSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Show all Desktops[[ChromeDriver: chrome on windows (ee3bcec7d80c05a8cad70f8e73995c5b)] -> xpath: //a[normalize-space()='Show AllLaptops & Notebooks']]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tutorialsninja.demo.testsuite.DesktopsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">7100 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyProductAddedToShoppingCartSuccessFully</span>
+                <span class="method-start">7187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25650 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">26094 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">30886 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductArrangeInAlphabeticalOrder</span>
+                <span class="method-start">30890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33209 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">33601 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">37804 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductsPriceDisplayHighToLowSuccessfully</span>
+                <span class="method-start">37814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39618 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">39911 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">44339 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatUserPlaceOrderSuccessfully</span>
+                <span class="method-start">44346 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46016 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tutorialsninja.demo.testsuite.MyAccountsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">46297 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">50360 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatUserRegisterAccountSuccessfully</span>
+                <span class="method-start">50368 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">73233 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">73569 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">77889 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatUserShouldLoginAndLogoutSuccessfully</span>
+                <span class="method-start">77893 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">119946 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">120367 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">125165 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldNavigateToLoginPageSuccessfully</span>
+                <span class="method-start">125170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">125829 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">126143 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">130380 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldNavigateToRegisterPageSuccessfully</span>
+                <span class="method-start">130384 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">151237 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tutorialsninja.demo.testsuite.TopMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">151515 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">155768 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldNavigateToComponentsPageSuccessfully</span>
+                <span class="method-start">155777 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">156825 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">157097 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">161333 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+                <span class="method-start">161336 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">162637 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">162953 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">167320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+                <span class="method-start">167325 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">168418 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

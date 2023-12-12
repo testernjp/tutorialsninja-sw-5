@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Login Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Login Test</h1>
+<p>
+  Test duration: 167.493s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.DesktopsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyProductAddedToShoppingCartSuccessFully
+      </td>
+  <td class="duration">
+    18.115s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on Show all Desktops[[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -&gt; xpath: //a[normalize-space()=&apos;Show AllDesktops&apos;]]<br />
+                                select A to Zfrom[[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -&gt; id: input-sort]<br />
+                                Clicking on product HPLP3065 [[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -&gt; xpath: //a[contains(text(),&apos;HP LP3065&apos;)]]<br />
+                                Getting HPLP3065 text [[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -&gt; xpath: //h1[contains(text(),&apos;HP LP3065&apos;)]]<br />
+                                clearing current quantity and adding the specified amount<br />
+                                Clicking on add to cart Button [[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -&gt; xpath: //button[@id=&apos;button-cart&apos;]]<br />
+                                Verifying if success message contains Success: You have added HP LP3065 to your shopping cart!<br />
+                                Clicking on shopping cart [[ChromeDriver: chrome on windows (9e1f15bf63221c2e7617d81da1821f59)] -&gt; xpath: //div[@class=&apos;alert alert-success alert-dismissible&apos;]/a[2]]<br />
+                                Verifying if success message contains Shopping Cart<br />
+                                Verifying if success message contains 2022-11-30<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Delivery Date Doesn&apos;t Appear expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:111)<br />
+              org.testng.Assert.failNotEquals(Assert.java:1578)<br />
+              org.testng.Assert.assertTrue(Assert.java:57)<br />
+              com.tutorialsninja.demo.testsuite.DesktopsTest.verifyProductAddedToShoppingCartSuccessFully(DesktopsTest.java:57)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:848)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:336)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1114)<br />
+              org.testng.TestNG.run(TestNG.java:1082)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatUserPlaceOrderSuccessfully
+      </td>
+  <td class="duration">
+    1.404s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on Show all Desktops[[ChromeDriver: chrome on windows (ee3bcec7d80c05a8cad70f8e73995c5b)] -&gt; xpath: //a[normalize-space()=&apos;Show AllLaptops &amp; Notebooks&apos;]]<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://tutorialsninja.com/demo/index.php?route=product/category&amp;amp;path=18&quot; class=&quot;see-all&quot;&gt;...&lt;/a&gt; is not clickable at point (368, 205). Other element would receive the click: &lt;img src=&quot;https://tutorialsninja.com/demo/image/cache/catalog/demo/macbook_1-200x200.jpg&quot; alt=&quot;MacBook&quot; title=&quot;MacBook&quot; class=&quot;img-responsive&quot;&gt;<br/>
+&nbsp; (Session info: chrome=119.0.6045.200)<br/>
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [ee3bcec7d80c05a8cad70f8e73995c5b, clickElement {id=F0C4BF56AACDC5F3FEBEAD8330962EC3_element_52}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61605/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Element: [[ChromeDriver: chrome on windows (ee3bcec7d80c05a8cad70f8e73995c5b)] -&gt; xpath: //a[normalize-space()=&apos;Show AllLaptops &amp; Notebooks&apos;]]<br/>
+Session ID: ee3bcec7d80c05a8cad70f8e73995c5b</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)<br />
+              jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)<br />
+              com.tutorialsninja.demo.utility.Utility.clickOnElement(Utility.java:67)<br />
+              com.tutorialsninja.demo.pages.HomePage.selectMenu(HomePage.java:72)<br />
+              com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully(LaptopsAndNotebooksTest.java:40)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:848)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:336)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1114)<br />
+              org.testng.TestNG.run(TestNG.java:1082)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.MyAccountsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatUserRegisterAccountSuccessfully
+      </td>
+  <td class="duration">
+    22.540s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on my account [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -&gt; xpath: //span[contains(text(),&apos;My Account&apos;)]]<br />
+                                Enter first nameSnehato field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -&gt; name: firstname]<br />
+                                Enter last nameShahto field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -&gt; name: lastname]<br />
+                                Enter emailsneha123@gmail.comto email field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -&gt; name: email]<br />
+                                Enter telephone07564123785to field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -&gt; name: telephone]<br />
+                                Enter passwordshah123to field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -&gt; name: password]<br />
+                                Enter emailshah123to email field [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -&gt; name: confirm]<br />
+                                Clicking on subscribe [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -&gt; name: newsletter]<br />
+                                Clicking on privacy policy [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -&gt; name: agree]<br />
+                                Clicking on continue [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -&gt; xpath: //input[@type=&apos;submit&apos;]]<br />
+                                Getting account creation text [[ChromeDriver: chrome on windows (2db9fa6f8e15d2fa75d6cc5d2b172915)] -&gt; xpath: //div[@id=&apos;content&apos;]/h1]<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: account not created expected [Your Account Has Been Created!] but found [Register Account]</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.testng.Assert.fail(Assert.java:111)<br />
+              org.testng.Assert.failNotEquals(Assert.java:1578)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:150)<br />
+              org.testng.Assert.assertEquals(Assert.java:132)<br />
+              org.testng.Assert.assertEquals(Assert.java:656)<br />
+              com.tutorialsninja.demo.testsuite.MyAccountsTest.verifyThatUserRegisterAccountSuccessfully(MyAccountsTest.java:59)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:848)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:336)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1114)<br />
+              org.testng.TestNG.run(TestNG.java:1082)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatUserShouldLoginAndLogoutSuccessfully
+      </td>
+  <td class="duration">
+    41.809s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on my account [[ChromeDriver: chrome on windows (8cf24e4b54870ab399c16c0cbb4f8d06)] -&gt; xpath: //span[contains(text(),&apos;My Account&apos;)]]<br />
+                                Enter emailsneha123@gmail.comto&nbsp; field [[ChromeDriver: chrome on windows (8cf24e4b54870ab399c16c0cbb4f8d06)] -&gt; name: email]<br />
+                                Enter passwordshah123to field [[ChromeDriver: chrome on windows (8cf24e4b54870ab399c16c0cbb4f8d06)] -&gt; name: password]<br />
+                                Clicking on Login Button [[ChromeDriver: chrome on windows (8cf24e4b54870ab399c16c0cbb4f8d06)] -&gt; xpath: //input[@value=&apos;Login&apos;]]<br />
+                                Getting my account text Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&apos;content&apos;]/h2[text()=&apos;My Account&apos;]&apos;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;content&apos;]/h2[text()=&apos;My Account&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=119.0.6045.200)<br/>
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception<br/>
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [8cf24e4b54870ab399c16c0cbb4f8d06, findElement {using=xpath, value=//div[@id=&apos;content&apos;]/h2[text()=&apos;My Account&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61671}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61671/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 8cf24e4b54870ab399c16c0cbb4f8d06</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br />
+              jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)<br />
+              com.tutorialsninja.demo.utility.Utility.getTextFromElement(Utility.java:78)<br />
+              com.tutorialsninja.demo.pages.MyAccountPage.getMyAccountText(MyAccountPage.java:56)<br />
+              com.tutorialsninja.demo.testsuite.MyAccountsTest.verifyThatUserShouldLoginAndLogoutSuccessfully(MyAccountsTest.java:74)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:848)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:336)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1114)<br />
+              org.testng.TestNG.run(TestNG.java:1082)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.DesktopsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyProductArrangeInAlphabeticalOrder
+      </td>
+  <td class="duration">
+    2.319s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Hovering and Clicking on desktop [[ChromeDriver: chrome on windows (3d4d8867f6b8133e9f22e2db67661fb8)] -&gt; link text: Desktops]<br />
+                                Clicking on Show all Desktops[[ChromeDriver: chrome on windows (3d4d8867f6b8133e9f22e2db67661fb8)] -&gt; xpath: //a[normalize-space()=&apos;Show AllDesktops&apos;]]<br />
+                                Clicking on sort by button [[ChromeDriver: chrome on windows (3d4d8867f6b8133e9f22e2db67661fb8)] -&gt; id: input-sort]<br />
+                                selectName (Z - A)from[[ChromeDriver: chrome on windows (3d4d8867f6b8133e9f22e2db67661fb8)] -&gt; id: input-sort]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyProductsPriceDisplayHighToLowSuccessfully
+      </td>
+  <td class="duration">
+    1.804s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Hovering and Clicking on laptops and notebooks [[ChromeDriver: chrome on windows (fa1e2c13aa80faae1c10e1be903de85f)] -&gt; link text: Laptops &amp; Notebooks]<br />
+                                Clicking on Show all Desktops[[ChromeDriver: chrome on windows (fa1e2c13aa80faae1c10e1be903de85f)] -&gt; xpath: //a[normalize-space()=&apos;Show AllLaptops &amp; Notebooks&apos;]]<br />
+                                selecting Price (High &gt; Low)<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.MyAccountsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToLoginPageSuccessfully
+      </td>
+  <td class="duration">
+    0.657s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on my account [[ChromeDriver: chrome on windows (6963d31877e0500a9833b26802c04244)] -&gt; xpath: //span[contains(text(),&apos;My Account&apos;)]]<br />
+                                Getting login account text [[ChromeDriver: chrome on windows (6963d31877e0500a9833b26802c04244)] -&gt; xpath: //h2[contains(text(),&apos;Returning Customer&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToRegisterPageSuccessfully
+      </td>
+  <td class="duration">
+    20.851s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on my account [[ChromeDriver: chrome on windows (20dd0e4eb4c6adb762ed97de5c6f87a7)] -&gt; xpath: //span[contains(text(),&apos;My Account&apos;)]]<br />
+                                Getting register account text [[ChromeDriver: chrome on windows (20dd0e4eb4c6adb762ed97de5c6f87a7)] -&gt; xpath: //h1[contains(text(),&apos;Register Account&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.TopMenuTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToComponentsPageSuccessfully
+      </td>
+  <td class="duration">
+    1.047s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Hovering and Clicking on components [[ChromeDriver: chrome on windows (16d8cb8b343d51dd1a5be2e122df4d78)] -&gt; link text: Components]<br />
+                                Clicking on Show all Desktops[[ChromeDriver: chrome on windows (16d8cb8b343d51dd1a5be2e122df4d78)] -&gt; xpath: //a[normalize-space()=&apos;Show AllComponents&apos;]]<br />
+                                Getting components text [[ChromeDriver: chrome on windows (16d8cb8b343d51dd1a5be2e122df4d78)] -&gt; xpath: //h2[contains(text(),&apos;Components&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToDesktopsPageSuccessfully
+      </td>
+  <td class="duration">
+    1.300s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Hovering and Clicking on desktop [[ChromeDriver: chrome on windows (a8fb44e52b11b811474f7cf021efb09a)] -&gt; link text: Desktops]<br />
+                                Clicking on Show all Desktops[[ChromeDriver: chrome on windows (a8fb44e52b11b811474f7cf021efb09a)] -&gt; xpath: //a[normalize-space()=&apos;Show AllDesktops&apos;]]<br />
+                                Getting desktop text [[ChromeDriver: chrome on windows (a8fb44e52b11b811474f7cf021efb09a)] -&gt; xpath: //h2[contains(text(),&apos;Desktops&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully
+      </td>
+  <td class="duration">
+    1.091s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Hovering and Clicking on laptops and notebooks [[ChromeDriver: chrome on windows (010ba0cd3785b7a1628a3e876b791a3a)] -&gt; link text: Laptops &amp; Notebooks]<br />
+                                Clicking on Show all Desktops[[ChromeDriver: chrome on windows (010ba0cd3785b7a1628a3e876b791a3a)] -&gt; xpath: //a[normalize-space()=&apos;Show AllLaptops &amp; Notebooks&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
